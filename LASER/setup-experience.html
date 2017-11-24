@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Start up and Basic Thunder Laser Procedures </title>
+</head>
+<style>
+#on-startup {
+	display: flex;
+	flex-flow: row no-wrap;
+	justify-content: center;
+	align-items: center;
+	font-family: "Horatio D", sans-serif;
+	color: white;
+	background: black;
+}
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+	height: 90%;
+	color: white;
+	background: black;
+	font-family: "Horatio D", sans-serif;
+	font-size: 1.5em;
+}
+.internal {
+	display: flex;
+	flex-flow: row no-wrap;
+	justify-content: space-around;
+	align-items: center;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 1em;
+}
+</style>
+<body>
+	<h1 id="on-startup"> On startup:</h1>
+	<div class="container" id="instructions">
+		<div class="internal" id="power">
+		<h3> Turn on three power switches </h3>
+			<div class="description">
+				<ul>
+					<li> 2 switches on right side near knee height for machine and lazer</li>
+					<li> 1 switch on the chiller. It will briefly emit noise and red lights</li>
+				</ul>
+			</div>
+		</div>
+		<div class="internal" id=power>
+			<h3> Load Work to software</h3>
+				<h5> Files accepted: </h5>
+				<ul> 
+					<li>.rd /.rdl : native files for the RD viewer </li>
+					<li>.ai : adobe illustrator. Combines layers of vector and raster </li>
+					<li>.dxf : autocad / autodesk exchange files. Combines layers of vector and raster. </li>
+					<li>.jpeg / .png : raster only. By default transparency not supported. May be possible to use pre-processing to create vector outlines in software tools such as Adobe, CAD, acorn, etc. </li>
+					<li> "Corel" : Not sure </li>
+				</ul>
+				<h5> Files NOT accepted: </h5>
+				<ul> 
+					<li>.svg : scalable vector graphics, a possible output from CAD and AI. Can contain raster. No support. </li>
+					<li>.fbx : 3d file interchange format. No support. </li>
+					<li>.collada, .3ds, .blend, .obj, .metal : Other 3d formats. No support </li>
+					<li> files of type video, audio, text, etc. not usually for image processing</li>
+				</ul>
+		</div>
+		<h3> Level U and Z </h3>
+			<div class="description">
+			</div>
+		</div>
+		<div class=internal id=download>
+		<h3> Download file from software to machine </h3>
+		<h3> Press frame to test machine </h3>
+		<h3> Turn off machine </h3>
+	</div>
+	<h1 id="on-startup"> File Cleanup on Machine </h1>
+	<div class="container" id="instructions">
+		<div class="internal"> On control panel, press esc until the left side is blank and the right contains a few fields with numbers.  Press the "FILE" button. Press the "RIGHT" button. Check to see the files in queue show up. For each file, press left to hover over it. Press enter. Navigate on the machine to Delete. Press enter. Repeat to confirm. Do this before running any new file or any file with changes in it.</div>
+	</div>
+</body>
+</html>
+
+setup-experience.html
